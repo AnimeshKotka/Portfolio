@@ -11,8 +11,8 @@ import { ContactComponent } from './contact/contact.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
-import {FormsModule,ReactiveFormsModule} from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PorjectsComponent } from './projects/projects.component';
 
 @NgModule({
   imports: [
@@ -21,7 +21,7 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
     SnotifyModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
   ],
   declarations: [
     ProfileComponent,
@@ -33,10 +33,11 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
     EducationComponent,
     ExperienceComponent,
     SkillsComponent,
+    PorjectsComponent,
   ],
   providers: [
-    { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
+    { provide: 'SnotifyToastConfig', useValue: ToastDefaults },
     SnotifyService,
-  ]
+  ],
 })
-export class ProfileModule { }
+export class ProfileModule {}
