@@ -26,7 +26,8 @@ jobs:
 
     # Step 4: Build the Angular project
     - name: Build Angular application
-      run: npm run build -- --base-href "/"
+      run: npm run build
+      # run: npm run build -- --base-href "/"
 
     # Step 5: Deploy to GitHub Pages
     - name: Deploy to GitHub Pages
